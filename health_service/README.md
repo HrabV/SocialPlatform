@@ -1,6 +1,6 @@
-# Healthcheck Service 
+# Сервіс для моніторингу здоров'я всіх сервісів Socia
 
-# Tech stack
+# Технологічний стек
 - Node.JS
 - Express
 - Axios
@@ -9,5 +9,10 @@
 - React.JS
 - Environment Variables (.env file) -> `dotenv` (`STAT_SERVICE_MONGO_DB_URL`)
 
-## Endpoint
-- (Notification Service) http://127.0.0.1:5000/healthcheck (For Example)
+## Кінцеві точки (наприклад)
+- http://127.0.0.1:5000/healthcheck
+
+## Як це має працювати
+- Сервіс відправляє запит на /healthcheck і очікує 204 статус код
+- (Випадок 1) Якщо статус код - 204 тоді сервіс працює
+- (Випадок 2) Якщо статус код 404 то тоді сервіс не працює
