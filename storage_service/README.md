@@ -21,3 +21,10 @@
 ```bash
 make run
 ```
+
+## Кінцеві точки (v1)
+- `POST` **/v1/buckets/create** - створити бакет
+- `DELETE` **/v1/buckets/delete/:bucket** - видалити бакет
+- `POST` **/v1/files/upload/:bucket** - завантажити файл
+- `GET` **/v1/files/get/:bucket/:file** - отримати файл
+- `DELETE` **/v1/files/delete/:bucket/:file** - видалити файл
