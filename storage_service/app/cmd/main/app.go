@@ -27,7 +27,7 @@ func main() {
 		ServerHeader:                 cfg.ServerHeader,
 		EnablePrintRoutes:            true,
 		DisablePreParseMultipartForm: true,
-		BodyLimit:                    1 << (10 * 3),
+		BodyLimit:                    cfg.ServerBodyLimit,
 		ErrorHandler: func(ctx *fiber.Ctx, err error) error {
 			return ctx.Status(400).JSON(fiber.Map{
 				"code":    400,
