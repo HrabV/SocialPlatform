@@ -15,6 +15,7 @@
 - `SS_MINIO_USE_SSL` - чи використовувати ssl для Minio
 - `SS_SERVER_HEADER` - заголовок сервера
 - `SS_IS_DEVELOPMENT` - режим сервіс ("dev" або "prod")
+- `SS_SERVER_BODY_LIMIT` - максимальний розмір тіла запиту
 
 ## Як запустити ?
 
