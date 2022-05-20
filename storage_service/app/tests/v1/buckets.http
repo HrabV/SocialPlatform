@@ -1,0 +1,10 @@
+### Create Bucket
+POST http://localhost:10001/v1/buckets/create
+Content-Type: application/json
+
+{
+  "bucket_name": "test"
+}
+
+### Delete Bucket
+DELETE http://localhost:10001/v1/buckets/delete/test
